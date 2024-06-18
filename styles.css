@@ -1,0 +1,231 @@
+/* link fonts  */
+/* outfit */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* dongle */
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Outfit:wght@100..900&display=swap');
+
+/* create variables */
+:root {
+    --primary-color: #130F49;
+    --secondary-color: #4FADD3;
+    --home-color: #F5FCFF;
+    --body-color: #ffffff;
+    --light-blue: #ffffff;
+    --sidebar-color: #F0FBFF;
+    --navlinks-color: #E6F8FE;
+    --text-color-gray: #858585;
+
+    --trans-01: 0.2s ease;
+    --trans-02: 0.3s ease;
+    --trans-03: 0.5s ease;
+
+    --padding: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    background-color: var(--body-color);
+    transition: var(--trans-02);
+}
+
+/* dark mode colors */
+body.dark {
+    --primary-color: #eaeaea;
+    --secondary-color: #2586ac;
+    --home-color: #23282f;
+    --body-color: #23282f;
+    --light-blue: #ffffff;
+    --sidebar-color: #1f242c;
+    --text-color-gray: #d6d6d6;
+}
+
+/* sidebar */
+.text {
+    transition: var(--trans-02);
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background: var(--sidebar-color);
+    transition: var(--trans-03);
+    padding: var(--padding);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.logo_img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo h3 {
+    font-size: 0.85rem;
+    margin-left: 15px;
+    color: var(--primary-color);
+}
+
+.navbar {
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar .nav-links {
+    display: flex;
+    padding: 15px;
+    background: var(--home-color);
+    border-radius: 8px;
+    transition: var(--trans-03);
+}
+
+.navbar .nav-links:hover {
+    background: var(--secondary-color);
+}
+
+/* for all icons */
+.icon {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-color-gray);
+    transition: var(--trans-02);
+    margin-right: 10px;
+}
+
+.navbar .nav-links a span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color-gray);
+    transition: var(--trans-02);
+}
+
+.navbar .nav-links:hover span {
+    color: #ffffff;
+}
+
+.navbar .nav-links:hover .icon {
+    color: #ffffff;
+} 
+
+/* navbar active mode */
+.navbar .nav-links.active {
+    background: var(--secondary-color);
+}
+
+.navbar .nav-links.active span {
+    color: #ffffff;
+}
+
+.navbar .nav-links.active .icon {
+    color: #ffffff;
+} 
+
+/* dark / light mode bar */
+.mode-nav {
+    margin-top: 340px;
+    cursor: pointer;
+}
+
+.sun-moon {
+    position: relative;
+}
+
+/* loght mode */
+
+.sun-moon .sun {
+    position: absolute;
+    opacity: 0;
+}
+
+.mode-text {
+    color: var(--text-color-gray);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: var(--trans-02);
+}
+
+/* dark mode */
+
+body.dark .sun-moon .sun {
+    opacity: 1;
+}
+
+body.dark .sun-moon .moon {
+    opacity: 0;
+}
+/* end side bar */
+
+/* === home section === */
+.home {
+    position: relative;
+    left: 250px;
+    width: calc(100% - 250px);
+    background: var(--body-color);
+    height: auto;
+    padding: 50px;
+    transition: var(--trans-03);
+}
+
+.home_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-heading h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Dongle', 'Helvetica Neue', Helvetica, Arial;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    width: 400px;
+    line-height: 0.8;
+}
+
+.main-heading h1 span {
+    font-family: 'Dongle', 'Helvetica Neue', Helvetica, Arial;
+    color: var(--secondary-color);
+}
+
+.main-heading p {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    color: var(--text-color-gray);
+}
+
+.main-heading h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: var(--secondary-color);
+    width: 150px;
+    height: 40px;
+    padding: 11px 30px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.main-image img {
+    width: 500px;
+    height: 500px;
+}
+

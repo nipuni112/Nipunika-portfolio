@@ -6,9 +6,90 @@
     <title>Home</title>
 
     <!-- favorite icon -->
-    
+     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <!-- Remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- link css -->
+     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     
+    <!-- side navigation bar -->
+     <nav class="sidebar">
+        <header>
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="logo" class="logo_img">
+                <h3>Nipunika <br> Weeravansha</h3>
+            </a>
+         </header>
+    
+         <!-- navigation bar -->
+          <ul class="navbar">
+            <li class="nav-links active">
+                <a href="#">
+                    <i class="ri-home-line icon"></i>
+                    <span class="nav-text text">Home</span>
+                </a>
+            </li>
+
+            <li class="nav-links">
+                <a href="#">
+                    <i class="ri-folder-5-line icon"></i>
+                    <span class="nav-text text">Projects</span>
+                </a>
+            </li>
+
+            <li class="nav-links">
+                <a href="#">
+                    <i class="ri-profile-line icon"></i>
+                    <span class="nav-text text">Resume</span>
+                </a>
+            </li>
+          </ul>
+
+          <!-- mode navigation -->
+           <ul class="mode-nav navbar">
+            <li class="nav-links mode">
+                <div class="sun-moon">
+                    <i class="ri-sun-line icon sun"></i>
+                    <i class="ri-moon-line icon moon"></i> 
+                </div>
+
+                <!-- mode text -->
+                 <span class="mode-text text">Dark Mode</span>
+            </li>
+           </ul>
+     </nav>
+
+     <!-- right side home section -->
+     <section class="home">
+
+        <!-- image and main-text -->
+        <div class="home_content">
+
+            <!-- main heading -->
+            <div class="main-heading">
+                <h1 class="text">hey, I’m a <span>Web developer</span> & <span>Designer.</span></h1>
+                <p class="text">Nipunika Prabodhani Weeravansha is who I am. I'm skilled in both web design and development.</p>
+                <h3 class="text">See Resume</h3>
+            </div>
+
+            <!-- main image -->
+            <div class="main-image">
+                <img src="img/my main-image.svg" alt="main-image">
+            </div>
+        </div>
+
+         <!-- skill section -->
+         <div class="skill">
+            <h6 class="text">My Skill</h6>
+            <h3 class="text">My Expertise</h3>
+         </div>
+     </section>
+
+     <script src="script.js"></script>
 </body>
 </html>
