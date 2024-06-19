@@ -21,4 +21,52 @@ const body = document.querySelector("body"),
 
         // set item local storage 
         localStorage.setItem('nightMode', body.classList.contains('dark'));
-    })
+    });
+
+    // scroll animation ( find on youtube video )
+    // left to right 
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry);
+            if (entry.isIntersecting) {
+                entry.target.classList.add('left-show');
+            } else {
+                entry.target.classList.remove('left-show');
+            }
+        });
+    });
+
+    const hiddenEl = document.querySelectorAll('.left-hidden');
+    hiddenEl.forEach((el) => observer.observe(el));
+
+
+    // right to left
+    const obs = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry);
+            if (entry.isIntersecting) {
+                entry.target.classList.add('right-show');
+            } else {
+                entry.target.classList.remove('right-show');
+            }
+        });
+    });
+
+    const hidElement = document.querySelectorAll('.right-hidden');
+    hidElement.forEach((el) => obs.observe(el));
+
+    // fade in out
+    // right to left
+    const obser = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry);
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-show');
+            } else {
+                entry.target.classList.remove('fade-show');
+            }
+        });
+    });
+
+    const hidEle = document.querySelectorAll('.fade-hidden');
+    hidEle.forEach((el) => obser.observe(el));

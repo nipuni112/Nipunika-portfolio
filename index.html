@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
     <!-- favorite icon -->
-     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 
     <!-- Remix icon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!-- link css -->
-     <link rel="stylesheet" href="styles.css">
+    <!-- link css file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- css swiper pluggin -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
+
 <body>
-    
+
     <!-- side navigation bar -->
-     <nav class="sidebar">
-        <header>
+    <nav class="sidebar">
+        <header class="left-hidden">
             <a href="#" class="logo">
                 <img src="img/logo.png" alt="logo" class="logo_img">
                 <h3>Nipunika <br> Weeravansha</h3>
             </a>
-         </header>
-    
-         <!-- navigation bar -->
-          <ul class="navbar">
+        </header>
+
+        <!-- navigation bar -->
+        <ul class="navbar left-hidden">
             <li class="nav-links active">
                 <a href="#">
                     <i class="ri-home-line icon"></i>
@@ -48,48 +53,278 @@
                     <span class="nav-text text">Resume</span>
                 </a>
             </li>
-          </ul>
+        </ul>
 
-          <!-- mode navigation -->
-           <ul class="mode-nav navbar">
+        <!-- mode navigation -->
+        <ul class="mode-nav navbar left-hidden">
             <li class="nav-links mode">
                 <div class="sun-moon">
                     <i class="ri-sun-line icon sun"></i>
-                    <i class="ri-moon-line icon moon"></i> 
+                    <i class="ri-moon-line icon moon"></i>
                 </div>
 
                 <!-- mode text -->
-                 <span class="mode-text text">Dark Mode</span>
+                <span class="mode-text text">Dark Mode</span>
             </li>
-           </ul>
-     </nav>
+        </ul>
+    </nav>
 
-     <!-- right side home section -->
-     <section class="home">
+    <!-- right side home section -->
+    <section class="home">
 
         <!-- image and main-text -->
         <div class="home_content">
 
             <!-- main heading -->
             <div class="main-heading">
-                <h1 class="text">hey, I’m a <span>Web developer</span> & <span>Designer.</span></h1>
-                <p class="text">Nipunika Prabodhani Weeravansha is who I am. I'm skilled in both web design and development.</p>
-                <h3 class="text">See Resume</h3>
+                <h1 class="text left-hidden">hey, I’m a <span>Web developer</span> & <span>Designer.</span></h1>
+                <p class="text left-hidden">Nipunika Prabodhani Weeravansha is who I am. I'm skilled in both web design
+                    and development.</p>
+                <h3 class="text left-hidden">See Resume</h3>
             </div>
 
             <!-- main image -->
             <div class="main-image">
-                <img src="img/my main-image.svg" alt="main-image">
+                <div class="my-image right-hidden"></div>
             </div>
         </div>
 
-         <!-- skill section -->
-         <div class="skill">
-            <h6 class="text">My Skill</h6>
-            <h3 class="text">My Expertise</h3>
-         </div>
-     </section>
+        <!-- skill section -->
+        <div class="skill">
+            <h6 class="text left-hidden">My Skill</h6>
+            <h3 class="text left-hidden">My Expertise</h3>
 
-     <script src="script.js"></script>
+            <!-- skill bar -->
+            <div class="main-skill-bar">
+                <div class="skill-bar left-hidden">
+                    <div class="skill-bar-content">
+                        <img src="img/Web_Design.webp" alt="">
+                        <div class="skill-bar-text">
+                            <h3 class="text">UI Design</h3>
+                            <h4 class="text">I'm capable of designing websites with Adobe XD and Figma.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-bar right-hidden">
+                    <div class="skill-bar-content">
+                        <img src="img/Web_Development.webp" alt="">
+                        <div class="skill-bar-text">
+                            <h3 class="text">Static Web Development</h3>
+                            <h4 class="text">I am able to use HTML, CSS, and JavaScript to construct static websites.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end home section -->
+
+    <!-- start about me section -->
+    <section class="about_me">
+        <div class="aboutme-content">
+            <div class="about-img left-hidden"></div>
+
+            <div class="about-text">
+                <h1 class="text headings right-hidden">About Me</h1>
+                <hr class="right-hidden">
+
+                <p class="text right-hidden">My name is <strong>Nipunika Weeravansha</strong>, and I am <strong>22 years
+                        old</strong>. I have a deep passion for web designing and developing, which I actively pursue as
+                    my hobbies. My interest in web design allows me to creatively express myself through visually
+                    appealing and user-friendly website layouts. Meanwhile, my enthusiasm for web development drives me
+                    to build functional, efficient, and innovative web applications.
+                    <br>
+                    <br>
+                    In addition to my technical skills, I am committed to staying current with the latest trends and
+                    technologies in the ever-evolving world of web design and development. I enjoy exploring new tools,
+                    frameworks, and techniques to enhance my projects and provide the best user experiences possible.
+                    <br>
+                    <br>
+                    Outside of my web-related interests, I am dedicated to continuous learning and personal growth. I
+                    thrive in environments where I can collaborate with others, share knowledge, and contribute to
+                    exciting and meaningful projects. My goal is to leverage my skills and passion to make a positive
+                    impact in the digital world.
+                </p>
+
+                <div class="buttons">
+                    <button type="button" class="btn1 right-hidden">Contact Me</button>
+                    <button type="button" class="btn2 right-hidden">Read More <i
+                            class="ri-arrow-right-line"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- background circles -->
+        <div class="circles">
+            <div class="circle1 right-hidden"></div>
+            <div class="circle2"></div>
+        </div>
+    </section>
+    <!-- end about me section -->
+
+    <!-- start project section -->
+    <section class="projects">
+        <h1 class="text headings fade-hidden">My Projects</h1>
+        <hr>
+        <div class="project-content">
+            <!-- project card 01 -->
+            <div class="projects-card fade-hidden">
+                <!-- project card image -->
+                <img src="img/flower shop.svg" alt="">
+                <!-- project name -->
+                <h3 class="text project-name">Website UI Design For Flower Shop</h3>
+                <!-- project description -->
+                <p class="text project-description">The webpage for FLOWER is designed to provide a delightful and
+                    user-friendly experience for customers seeking beautiful floral arrangements.</p>
+                <!-- buttons -->
+                <div class="project-buttons">
+                    <button type="button" class="btn-view">View</button>
+                </div>
+            </div>
+
+            <!-- project card 02 -->
+            <div class="projects-card fade-hidden">
+                <!-- project card image -->
+                <img src="img/juice bar.svg" alt="">
+                <!-- project name -->
+                <h3 class="text project-name">Website UI Design For Juice Bar</h3>
+                <!-- project description -->
+                <p class="text project-description">The webpage for Fruit Hub is designed to captivate and engage
+                    visitors with its vibrant and colorful theme, emphasizing the freshness and health benefits of its
+                    fruit juices.</p>
+                <!-- buttons -->
+                <div class="project-buttons">
+                    <button type="button" class="btn-view">View</button>
+                </div>
+            </div>
+
+            <!-- project card 03 -->
+            <div class="projects-card fade-hidden">
+                <!-- project card image -->
+                <img src="img/cafe.svg" alt="">
+                <!-- project name -->
+                <h3 class="text project-name">Website UI Design For Cafe</h3>
+                <!-- project description -->
+                <p class="text project-description">The webpage for COCafé is expertly crafted to welcome visitors into
+                    the warm and inviting world of a premium coffee shop.</p>
+                <!-- buttons -->
+                <div class="project-button">
+                    <button type="button" class="btn-view">View</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- view all projects button -->
+        <div class="main-project-btn fade-hidden">
+            <button type="button" class="btn-view-all">View All <i class="ri-arrow-right-line"></i></button>
+        </div>
+
+        <!-- background circles -->
+        <div class="circles">
+            <div class="circle1 right-hidden"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+        </div>
+    </section>
+    <!-- end projects section -->
+
+    <!-- start get in touch section -->
+    <section class="get-in-touch">
+        <div class="get-in-touch-container">
+            <div class="contact-left">
+                <h1 class="text headings fade-hidden">Get In Touch</h1>
+                <hr class="fade-hidden">
+                <p class="text fade-hidden">I’d love to hear from you! Whether you have a question about my work, a
+                    potential project, or just want to say hello, feel free to drop me a message. Let’s connect and
+                    create something amazing together. You can reach me via the contact form below or directly at [your
+                    email address]. Looking forward to hearing from you!</p>
+
+                <ul class="social-media">
+                    <li class="fade-hidden"><a href=""><i class="ri-facebook-fill"></i></a></li>
+                    <li class="fade-hidden"><a href=""><i class="ri-whatsapp-line"></i></a></li>
+                    <li class="fade-hidden"><a href=""><i class="ri-telegram-2-line"></i></a></li>
+                    <li class="fade-hidden"><a href=""><i class="ri-github-fill"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="contact-right">
+                <form method="post">
+                    <input type="text" name="name" placeholder="Name" class="input right-hidden">
+                    <input type="email" name="email" placeholder="Email" class="input right-hidden">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message"
+                        class="messege right-hidden"></textarea>
+                    <button type="submit" class="btn-send right-hidden">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- background circles -->
+        <div class="circles">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+    </section>
+    <!-- end gt in touch section -->
+
+    <!-- start download my resume section -->
+    <section class="download-resume">
+        <div class="download-container">
+            <!-- left side image -->
+            <div class="download-left left-hidden">
+                <img src="img/download resume image.svg" alt="">
+            </div>
+
+            <!-- right side content -->
+            <div class="download-right">
+                <h1 class="text headings right-hidden">Download My Resume</h1>
+                <hr class="right-hidden">
+
+                <p class="text right-hidden">Interested in learning more about my professional background and
+                    experience? Download my resume to get a detailed overview of my skills, projects, and career
+                    journey. Click the button below to access the PDF. If you have any questions or would like to
+                    discuss a potential collaboration, feel free to reach out!</p>
+
+                <!-- download & view buttons -->
+                <div class="buttons">
+                    <button type="button" class="download right-hidden">Download <i
+                            class="ri-arrow-down-line"></i></button>
+                    <button type="button" class="view right-hidden">View <i class="ri-arrow-right-line"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- background circles -->
+        <div class="circles">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+    </section>
+    <!-- end download resume section -->
+
+    <!-- start footer section -->
+    <section class="footer">
+        <div class="footer-content">
+            <hr>
+            <ul class="pages">
+                <li class="fade-hidden"><a href="#">Home</a></li>
+                <li class="fade-hidden"><a href="#">Projects</a></li>
+                <li class="fade-hidden"><a href="#">Resume</a></li>
+            </ul>
+
+            <ul class="social-media">
+                <li class="fade-hidden"><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                <li class="fade-hidden"><a href="#"><i class="ri-whatsapp-line"></i></a></li>
+                <li class="fade-hidden"><a href="#"><i class="ri-telegram-2-line"></i></a></li>
+                <li class="fade-hidden"><a href="#"><i class="ri-github-fill"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- end footer section -->
+
+    <!-- link js file -->
+    <script src="script.js"></script>
 </body>
+
 </html>
