@@ -4,7 +4,7 @@ const body = document.querySelector("body"),
       modeText = body.querySelector('.mode-text');
 
       // change mode 
-    //   get item local storage ( w3 school)
+    //   get item local storage
     if (localStorage.getItem('nightMode') == 'true') {
         body.classList.add('dark');
     }
@@ -38,38 +38,6 @@ const body = document.querySelector("body"),
 
     const hiddenEl = document.querySelectorAll('.left-hidden');
     hiddenEl.forEach((el) => observer.observe(el));
-
-
-    // right to left
-    const obs = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            console.log(entry);
-            if (entry.isIntersecting) {
-                entry.target.classList.add('right-show');
-            } else {
-                entry.target.classList.remove('right-show');
-            }
-        });
-    });
-
-    const hidElement = document.querySelectorAll('.right-hidden');
-    hidElement.forEach((el) => obs.observe(el));
-
-    // fade in out
-    // right to left
-    const obser = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            console.log(entry);
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade-show');
-            } else {
-                entry.target.classList.remove('fade-show');
-            }
-        });
-    });
-
-    const hidEle = document.querySelectorAll('.fade-hidden');
-    hidEle.forEach((el) => obser.observe(el));
 
 
     // progress bar ( find on codepen: https://codepen.io/Okba-Design/pen/LYGXevQ)
