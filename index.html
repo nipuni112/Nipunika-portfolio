@@ -32,7 +32,8 @@
         </header>
 
         <!-- navigation bar -->
-        <ul class="navbar left-hidden">
+         <!-- pages navbar -->
+        <ul class="nav-first navbar left-hidden">
             <li class="nav-links active">
                 <a href="#">
                     <i class="ri-home-line icon"></i>
@@ -54,6 +55,32 @@
                 </a>
             </li>
         </ul>
+        <!-- end pages navbar -->
+
+        <!-- social media navbars -->
+        <ul class="nav-second navbar left-hidden">
+            <li class="nav-links">
+                <a href="#">
+                    <i class="ri-github-fill icon"></i>
+                    <span class="nav-text text">GitHub</span>
+                </a>
+            </li>
+
+            <li class="nav-links">
+                <a href="#">
+                    <i class="ri-facebook-fill icon"></i>
+                    <span class="nav-text text">Facebook</span>
+                </a>
+            </li>
+
+            <li class="nav-links">
+                <a href="#">
+                    <i class="ri-youtube-fill icon"></i>
+                    <span class="nav-text text">Youtube</span>
+                </a>
+            </li>
+        </ul>
+        <!-- end social media navbars -->
 
         <!-- mode navigation -->
         <ul class="mode-nav navbar left-hidden">
@@ -67,7 +94,9 @@
                 <span class="mode-text text">Dark Mode</span>
             </li>
         </ul>
+        <!-- end mode navbar -->
     </nav>
+    <!-- end navigation section / end sidebar  -->
 
     <!-- right side home section -->
     <section class="home">
@@ -85,35 +114,31 @@
 
             <!-- main image -->
             <div class="main-image">
-                <div class="my-image right-hidden"></div>
+                <div class="my-image left-hidden"></div>
             </div>
         </div>
 
-        <!-- skill section -->
-        <div class="skill">
-            <h6 class="text left-hidden">My Skill</h6>
-            <h3 class="text left-hidden">My Expertise</h3>
+        <div class="expertise">
+            <h1 class="text left-hidden">- My Expertise -</h1>
 
-            <!-- skill bar -->
-            <div class="main-skill-bar">
-                <div class="skill-bar left-hidden">
-                    <div class="skill-bar-content">
-                        <img src="img/Web_Design.webp" alt="">
-                        <div class="skill-bar-text">
-                            <h3 class="text">UI Design</h3>
-                            <h4 class="text">I'm capable of designing websites with Adobe XD and Figma.</h4>
-                        </div>
+            <div class="expertise_cards">
+                <div class="expertise_card">
+                    <div class="expertise-left left-hidden">
+                        <img src="img/user-interface.png" alt="">
+                    </div>
+                    <div class="expertise-right">
+                        <h4 class="text left-hidden">UI Design</h4>
+                        <p class="text left-hidden">I'm capable of designing websites with Adobe XD and Figma.</p>
                     </div>
                 </div>
 
-                <div class="skill-bar right-hidden">
-                    <div class="skill-bar-content">
-                        <img src="img/Web_Development.webp" alt="">
-                        <div class="skill-bar-text">
-                            <h3 class="text">Static Web Development</h3>
-                            <h4 class="text">I am able to use HTML, CSS, and JavaScript to construct static websites.
-                            </h4>
-                        </div>
+                <div class="expertise_card">
+                    <div class="expertise-left left-hidden">
+                        <img src="img/redesign.png" alt="">
+                    </div>
+                    <div class="expertise-right">
+                        <h4 class="text left-hidden">Static Web Development</h4>
+                        <p class="text left-hidden">I am able to use HTML, CSS, and JavaScript to construct static websites.</p>
                     </div>
                 </div>
             </div>
@@ -127,10 +152,9 @@
             <div class="about-img left-hidden"></div>
 
             <div class="about-text">
-                <h1 class="text headings right-hidden">About Me</h1>
-                <hr class="right-hidden">
+                <h1 class="text headings left-hidden">About Me</h1>
 
-                <p class="text right-hidden">My name is <strong>Nipunika Weeravansha</strong>, and I am <strong>22 years
+                <p class="text left-hidden">My name is <strong>Nipunika Weeravansha</strong>, and I am <strong>22 years
                         old</strong>. I have a deep passion for web designing and developing, which I actively pursue as
                     my hobbies. My interest in web design allows me to creatively express myself through visually
                     appealing and user-friendly website layouts. Meanwhile, my enthusiasm for web development drives me
@@ -149,8 +173,8 @@
                 </p>
 
                 <div class="buttons">
-                    <button type="button" class="btn1 right-hidden">Contact Me</button>
-                    <button type="button" class="btn2 right-hidden">Read More <i
+                    <button type="button" class="btn1 left-hidden">Contact Me</button>
+                    <button type="button" class="btn2 left-hidden">Read More <i
                             class="ri-arrow-right-line"></i></button>
                 </div>
             </div>
@@ -158,72 +182,155 @@
 
         <!-- background circles -->
         <div class="circles">
-            <div class="circle1 right-hidden"></div>
+            <div class="circle1 left-hidden"></div>
             <div class="circle2"></div>
         </div>
     </section>
     <!-- end about me section -->
 
+
+    <!-- start skill section -->
+        <section class="pogress-bar">
+            <div class="progress-container">
+                <h1 class="text headings left-hidden">My Skills</h1>
+                <div class="progress-content">
+                    <div class="progress-card">
+                        <div class="percent left-hidden">
+                            <p style="display:none;" class="text">80%</p>
+                        </div>
+                        <div class="desc left-hidden">
+                            <p class="text">HTML</p>
+                        </div>
+                    </div>
+
+                    <div class="progress-card">
+                        <div class="percent left-hidden">
+                            <p style="display:none;" class="text">65%</p>
+                        </div>
+                        <div class="desc left-hidden">
+                            <p class="text">CSS</p>
+                        </div>
+                    </div>
+
+                    <div class="progress-card">
+                        <div class="percent left-hidden">
+                            <p style="display:none;" class="text">40%</p>
+                        </div>
+                        <div class="desc left-hidden">
+                            <p class="text">Java Script</p>
+                        </div>
+                    </div>
+
+                    <div class="progress-card">
+                        <div class="percent left-hidden">
+                            <p style="display:none;" class="text">70%</p>
+                        </div>
+                        <div class="desc left-hidden">
+                            <p class="text">Figma</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-content">
+                    <div class="progress-card">
+                        <div class="percent left-hidden">
+                            <p style="display:none;" class="text">40%</p>
+                        </div>
+                        <div class="desc left-hidden">
+                            <p class="text">Photoshop</p>
+                        </div>
+                    </div>
+
+                    <div class="progress-card">
+                        <div class="percent left-hidden">
+                            <p style="display:none;" class="text">30%</p>
+                        </div>
+                        <div class="desc left-hidden">
+                            <p class="text">Illustrator</p>
+                        </div>
+                    </div>
+
+                    <div class="progress-card">
+                        <div class="percent left-hidden">
+                            <p style="display:none;" class="text">50%</p>
+                        </div>
+                        <div class="desc left-hidden">
+                            <p class="text">XD</p>
+                        </div>
+                    </div>
+
+                    <div class="progress-card">
+                        <div class="percent left-hidden">
+                            <p style="display:none;" class="text">60%</p>
+                        </div>
+                        <div class="desc left-hidden">
+                            <p class="text">Visual Basic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- end skill section -->
+
     <!-- start project section -->
     <section class="projects">
-        <h1 class="text headings fade-hidden">My Projects</h1>
-        <hr>
+        <h1 class="text headings left-hidden">My Projects</h1>
         <div class="project-content">
             <!-- project card 01 -->
-            <div class="projects-card fade-hidden">
+            <div class="projects-card left-hidden">
                 <!-- project card image -->
-                <img src="img/flower shop.svg" alt="">
+                <img src="img/flower shop.svg" alt="" class="left-hidden">
                 <!-- project name -->
-                <h3 class="text project-name">Website UI Design For Flower Shop</h3>
+                <h3 class="text project-name left-hidden">Website UI Design For Flower Shop</h3>
                 <!-- project description -->
-                <p class="text project-description">The webpage for FLOWER is designed to provide a delightful and
+                <p class="text project-description left-hidden">The webpage for FLOWER is designed to provide a delightful and
                     user-friendly experience for customers seeking beautiful floral arrangements.</p>
                 <!-- buttons -->
-                <div class="project-buttons">
+                <div class="project-buttons left-hidden">
                     <button type="button" class="btn-view">View</button>
                 </div>
             </div>
 
             <!-- project card 02 -->
-            <div class="projects-card fade-hidden">
+            <div class="projects-card left-hidden">
                 <!-- project card image -->
-                <img src="img/juice bar.svg" alt="">
+                <img src="img/juice bar.svg" alt="" class="left-hidden">
                 <!-- project name -->
-                <h3 class="text project-name">Website UI Design For Juice Bar</h3>
+                <h3 class="text project-name left-hidden">Website UI Design For Juice Bar</h3>
                 <!-- project description -->
-                <p class="text project-description">The webpage for Fruit Hub is designed to captivate and engage
+                <p class="text project-description left-hidden">The webpage for Fruit Hub is designed to captivate and engage
                     visitors with its vibrant and colorful theme, emphasizing the freshness and health benefits of its
                     fruit juices.</p>
                 <!-- buttons -->
-                <div class="project-buttons">
+                <div class="project-buttons left-hidden">
                     <button type="button" class="btn-view">View</button>
                 </div>
             </div>
 
             <!-- project card 03 -->
-            <div class="projects-card fade-hidden">
+            <div class="projects-card left-hidden">
                 <!-- project card image -->
-                <img src="img/cafe.svg" alt="">
+                <img src="img/cafe.svg" alt="" class="left-hidden">
                 <!-- project name -->
-                <h3 class="text project-name">Website UI Design For Cafe</h3>
+                <h3 class="text project-name left-hidden">Website UI Design For Cafe</h3>
                 <!-- project description -->
-                <p class="text project-description">The webpage for COCafé is expertly crafted to welcome visitors into
+                <p class="text project-description left-hidden">The webpage for COCafé is expertly crafted to welcome visitors into
                     the warm and inviting world of a premium coffee shop.</p>
                 <!-- buttons -->
-                <div class="project-button">
+                <div class="project-button left-hidden">
                     <button type="button" class="btn-view">View</button>
                 </div>
             </div>
         </div>
 
         <!-- view all projects button -->
-        <div class="main-project-btn fade-hidden">
+        <div class="main-project-btn left-hidden">
             <button type="button" class="btn-view-all">View All <i class="ri-arrow-right-line"></i></button>
         </div>
 
         <!-- background circles -->
         <div class="circles">
-            <div class="circle1 right-hidden"></div>
+            <div class="circle1 left-hidden"></div>
             <div class="circle2"></div>
             <div class="circle3"></div>
         </div>
@@ -234,28 +341,27 @@
     <section class="get-in-touch">
         <div class="get-in-touch-container">
             <div class="contact-left">
-                <h1 class="text headings fade-hidden">Get In Touch</h1>
-                <hr class="fade-hidden">
-                <p class="text fade-hidden">I’d love to hear from you! Whether you have a question about my work, a
+                <h1 class="text headings left-hidden">Get In Touch</h1>
+                <p class="text left-hidden">I’d love to hear from you! Whether you have a question about my work, a
                     potential project, or just want to say hello, feel free to drop me a message. Let’s connect and
                     create something amazing together. You can reach me via the contact form below or directly at [your
                     email address]. Looking forward to hearing from you!</p>
 
                 <ul class="social-media">
-                    <li class="fade-hidden"><a href=""><i class="ri-facebook-fill"></i></a></li>
-                    <li class="fade-hidden"><a href=""><i class="ri-whatsapp-line"></i></a></li>
-                    <li class="fade-hidden"><a href=""><i class="ri-telegram-2-line"></i></a></li>
-                    <li class="fade-hidden"><a href=""><i class="ri-github-fill"></i></a></li>
+                    <li class="left-hidden"><a href=""><i class="ri-facebook-fill"></i></a></li>
+                    <li class="left-hidden"><a href=""><i class="ri-whatsapp-line"></i></a></li>
+                    <li class="left-hidden"><a href=""><i class="ri-telegram-2-line"></i></a></li>
+                    <li class="left-hidden"><a href=""><i class="ri-github-fill"></i></a></li>
                 </ul>
             </div>
 
             <div class="contact-right">
                 <form method="post">
-                    <input type="text" name="name" placeholder="Name" class="input right-hidden">
-                    <input type="email" name="email" placeholder="Email" class="input right-hidden">
+                    <input type="text" name="name" placeholder="Name" class="input left-hidden">
+                    <input type="email" name="email" placeholder="Email" class="input left-hidden">
                     <textarea name="message" id="" cols="30" rows="10" placeholder="Message"
-                        class="messege right-hidden"></textarea>
-                    <button type="submit" class="btn-send right-hidden">Send</button>
+                        class="messege left-hidden"></textarea>
+                    <button type="submit" class="btn-send left-hidden">Send</button>
                 </form>
             </div>
         </div>
@@ -278,19 +384,18 @@
 
             <!-- right side content -->
             <div class="download-right">
-                <h1 class="text headings right-hidden">Download My Resume</h1>
-                <hr class="right-hidden">
+                <h1 class="text headings left-hidden">Download My Resume</h1>
 
-                <p class="text right-hidden">Interested in learning more about my professional background and
+                <p class="text left-hidden">Interested in learning more about my professional background and
                     experience? Download my resume to get a detailed overview of my skills, projects, and career
                     journey. Click the button below to access the PDF. If you have any questions or would like to
                     discuss a potential collaboration, feel free to reach out!</p>
 
                 <!-- download & view buttons -->
                 <div class="buttons">
-                    <button type="button" class="download right-hidden">Download <i
+                    <button type="button" class="download left-hidden">Download <i
                             class="ri-arrow-down-line"></i></button>
-                    <button type="button" class="view right-hidden">View <i class="ri-arrow-right-line"></i></button>
+                    <button type="button" class="view left-hidden">View <i class="ri-arrow-right-line"></i></button>
                 </div>
             </div>
         </div>
@@ -308,23 +413,30 @@
         <div class="footer-content">
             <hr>
             <ul class="pages">
-                <li class="fade-hidden"><a href="#">Home</a></li>
-                <li class="fade-hidden"><a href="#">Projects</a></li>
-                <li class="fade-hidden"><a href="#">Resume</a></li>
+                <li class="left-hidden"><a href="#">Home</a></li>
+                <li class="left-hidden"><a href="#">Projects</a></li>
+                <li class="left-hidden"><a href="#">Resume</a></li>
             </ul>
 
             <ul class="social-media">
-                <li class="fade-hidden"><a href="#"><i class="ri-facebook-fill"></i></a></li>
-                <li class="fade-hidden"><a href="#"><i class="ri-whatsapp-line"></i></a></li>
-                <li class="fade-hidden"><a href="#"><i class="ri-telegram-2-line"></i></a></li>
-                <li class="fade-hidden"><a href="#"><i class="ri-github-fill"></i></a></li>
+                <li class="left-hidden"><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                <li class="left-hidden"><a href="#"><i class="ri-whatsapp-line"></i></a></li>
+                <li class="left-hidden"><a href="#"><i class="ri-telegram-2-line"></i></a></li>
+                <li class="left-hidden"><a href="#"><i class="ri-github-fill"></i></a></li>
             </ul>
         </div>
     </section>
     <!-- end footer section -->
 
+    <!-- progress bar effect jqery pluggins -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js'></script>
+
     <!-- link js file -->
     <script src="script.js"></script>
+
+
 </body>
 
 </html>

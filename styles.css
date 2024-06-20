@@ -14,6 +14,8 @@
     --light-blue: #ffffff;
     --sidebar-color: #F0FBFF;
     --text-color-gray: #858585;
+    --overlay-color: #130f4918;
+    --box-color: rgb(232, 248, 252);
 
     --trans-01: 0.2s ease;
     --trans-02: 0.3s ease;
@@ -54,11 +56,13 @@ body {
 body.dark {
     --primary-color: #eaeaea;
     --secondary-color: #2586ac;
-    --home-color: #23282f;
+    --home-color: #262c34;
     --body-color: #23282f;
     --light-blue: #ffffff;
     --sidebar-color: #1f242c;
     --text-color-gray: #d6d6d6;
+    --overlay-color: #eaeaea15;
+    --box-color: #1f242c;
 }
 
 /* sidebar */
@@ -74,6 +78,7 @@ body.dark {
     transition: var(--trans-03);
     padding: var(--padding);
     z-index: 10;
+    overflow: hidden;
 }
 
 .logo {
@@ -104,7 +109,6 @@ body.dark {
 .navbar .nav-links {
     display: flex;
     padding: 15px;
-    background: var(--home-color);
     border-radius: 8px;
     transition: var(--trans-03);
 }
@@ -152,7 +156,7 @@ body.dark {
 
 /* dark / light mode bar */
 .mode-nav {
-    margin-top: 340px;
+    margin-top: 120px;
     cursor: pointer;
 }
 
@@ -192,10 +196,11 @@ body.dark .sun-moon .moon {
     left: 250px;
     width: calc(100% - 250px);
     background: var(--home-color);
-    height: auto;
+    height: 100vh;
     padding: 10px 50px;
     transition: var(--trans-03);
     z-index: 1;
+    overflow: hidden;
 }
 
 .home_content {
@@ -252,14 +257,57 @@ body.dark .my-image {
     background-size: cover;
     width: 500px;
     height: 500px;
+    transition: var(--trans-03);
 }
+
+/* start my experties */
+.expertise h1 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.expertise_cards {
+    display: flex;
+    margin-top: 30px;
+    gap: 90px;
+}
+
+.expertise_card {
+    display: flex;
+    width: 370px;
+    height: 87px;
+    padding: 10px;
+    background: var(--box-color);
+    align-items: center;
+    gap: 25px;
+    border-radius: 10px;
+
+}
+
+.expertise-left img {
+    width: 60px;
+    height: 60px;
+}
+
+.expertise-right h4 {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.expertise-right p {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: var(--text-color-gray);
+}
+/* end my experties */
 
 /* scroll animation */
 /* left side scroll animation */
 .left-hidden {
     opacity: 0;
-    transition: all 2s;
-    transform: translateX(-105%);
+    transition: all 0.5s;
+    transform: translateY(50%);
     filter: blur(5px);
 
 }
@@ -270,98 +318,11 @@ body.dark .my-image {
     filter: blur(0px);
 }
 
-/* right side scroll animation */
-.right-hidden {
-    opacity: 0;
-    transition: all 1.9s;
-    transform: translateX(105%);
-    filter: blur(5px);
-}
-
-.right-show {
-    opacity: 1;
-    transform: translateX(0);
-    filter: blur(0px);
-}
-
-/* scroll fade animation */
-.fade-hidden {
-    opacity: 0;
-    transition: all 1.5s;
-    transform: translateX(-105%);
-    filter: blur(5px);
-}
-
-.fade-show {
-    opacity: 1;
-    filter: blur(0px);
-    transform: translateX(0);
-}
-
 @media(perfers-reduced-motion) {
-    .hidden {
+    .left-hidden {
         transition: none;
     }
 }
-
-/* my expertise */
-.skill {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.skill h6 {
-    color: var(--secondary-color);
-    font-size: 0.9rem;
-}
-
-.skill h3 {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-}
-
-/* skill bar */
-.skill-bar {
-    display: flex;
-    justify-content: center;
-}
-
-.main-skill-bar {
-    display: flex;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.skill-bar-content {
-    display: flex;
-    align-items: center;
-    background: var(--sidebar-color);
-    padding: 15px 20px;
-    width: 370px;
-    border-radius: 50px;
-    transition: var(--trans-03);
-}
-
-.skill-bar-content img {
-    width: 70px;
-    height: 70px;
-    margin-right: 20px;
-}
-
-.skill-bar-text h3 {
-    margin-bottom: 5px;
-    font-size: 0.9rem;
-}
-
-.skill-bar-text h4 {
-    font-size: 0.8rem;
-    font-weight: 400;
-    color: var(--text-color-gray);
-}
-
 /* end home section */
 
 /* start about me section */
@@ -374,7 +335,7 @@ body.dark .my-image {
     padding: 10px 50px;
     transition: var(--trans-03);
     z-index: 2;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .about_me .aboutme-content {
@@ -390,7 +351,7 @@ body.dark .my-image {
     background-size: cover;
     width: 500px;
     height: 500px;
-    transition: all 1.6s;
+    transition: all 0.6s;
 }
 
 body.dark .aboutme-content .about-img {
@@ -398,14 +359,32 @@ body.dark .aboutme-content .about-img {
     background-size: cover;
     width: 500px;
     height: 500px;
-    transition: all 1.6s;
+    transition: all 0.6s;
 }
 
 .headings {
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 2rem;
+    font-weight: 900;
     color: var(--primary-color);
+    text-transform: uppercase;
     margin-bottom: 5px;
+    z-index: 1;
+}
+
+
+.about-text h1::before {
+    content: 'About Me';
+    position: absolute;
+    top: -7px;
+    left: -25px;
+    width: 100%;
+    height: 100%;
+    color: var(--overlay-color);
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: 900;
+    transition: var(--trans-02);
+    z-index: -1;
 }
 
 .aboutme-content .about-text hr {
@@ -490,6 +469,82 @@ body.dark .aboutme-content .about-img {
 
 /* end about me section */
 
+/* strat skill progress section */
+.pogress-bar {
+    position: relative;
+    left: 250px;
+    width: calc(100% - 250px);
+    background: var(--body-color);
+    height: auto;
+    padding: 10px 50px;
+    transition: var(--trans-03);
+    z-index: 2;
+    overflow: hidden;
+}
+
+.progress-container h1::before {
+    content: 'My Skills';
+    position: absolute;
+    top: -6px;
+    left: -25px;
+    width: 500px;
+    height: 100%;
+    color: var(--overlay-color);
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: 900;
+    transition: var(--trans-02);
+    z-index: -1;
+}
+
+.progress-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.progress-card {
+    width: 230px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.percent{
+	width:120px;
+	height:120px;
+}
+
+.percent p {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.percent svg{
+	stroke-linecap:round;
+}
+
+.desc p {
+    font-size: 1rem;
+    color: var(--text-color-gray);
+    margin-top: 20px;
+    font-weight: 600;
+}
+/* end skill progress section */
+
 /* start projects section */
 .projects {
     position: relative;
@@ -504,18 +559,22 @@ body.dark .aboutme-content .about-img {
     padding: 10px 50px;
     transition: var(--trans-03);
     z-index: 2;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-.projects hr {
-    width: 100px;
-    height: 4px;
-    background: var(--secondary-color);
-    border: none;
-    display: flex;
-    align-items: start;
-    border-radius: 10px;
-    margin-bottom: 30px;
+.projects h1::before {
+    content: 'My Projects';
+    position: absolute;
+    top: -6px;
+    left: -25px;
+    width: 500px;
+    height: 100%;
+    color: var(--overlay-color);
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: 900;
+    transition: var(--trans-02);
+    z-index: -1;
 }
 
 .project-content {
@@ -629,7 +688,7 @@ body.dark .aboutme-content .about-img {
     padding: 10px 50px;
     transition: var(--trans-03);
     z-index: 2;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .get-in-touch-container {
@@ -642,15 +701,19 @@ body.dark .aboutme-content .about-img {
 }
 
 /* get in touch left side */
-.contact-left hr {
-    width: 100px;
-    height: 4px;
-    background: var(--secondary-color);
-    border: none;
-    display: flex;
-    align-items: start;
-    border-radius: 10px;
-    margin-bottom: 30px;
+.contact-left h1::before {
+    content: 'Get In Touch';
+    position: absolute;
+    top: -6px;
+    left: -25px;
+    width: 500px;
+    height: 100%;
+    color: var(--overlay-color);
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: 900;
+    transition: var(--trans-02);
+    z-index: -1;
 }
 
 .contact-left p {
@@ -750,7 +813,7 @@ body.dark .aboutme-content .about-img {
     padding: 10px 50px;
     transition: var(--trans-03);
     z-index: 2;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .download-container {
@@ -771,15 +834,19 @@ body.dark .aboutme-content .about-img {
     margin-top: 30px;
 }
 
-.download-right hr {
-    width: 150px;
-    height: 4px;
-    background: var(--secondary-color);
-    border: none;
-    display: flex;
-    align-items: start;
-    border-radius: 10px;
-    margin-bottom: 30px;
+.download-right h1::before {
+    content: 'Download My Resume';
+    position: absolute;
+    top: -6px;
+    left: -25px;
+    width: 1000px;
+    height: 100%;
+    color: var(--overlay-color);
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: 900;
+    transition: var(--trans-02);
+    z-index: -1;
 }
 
 .download-right p {
@@ -845,7 +912,7 @@ body.dark .aboutme-content .about-img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .footer .footer-content {
