@@ -55,5 +55,27 @@ const body = document.querySelector("body"),
       });
 
 
+    //   project filter (find on youtube : https://youtu.be/ATeWQlY3N04?si=dUJgtUDtU-ms0SAN)
+      let sort = document.querySelectorAll('.sort'); 
+      let projectCard = document.querySelectorAll('.project-card');
 
-    
+      for (let i=0; i<sort.length; i++) {
+        sort[i].addEventListener('click', function() {
+            for (let j=0; j<sort.length; j++) {
+                sort[j].classList.remove('active');
+            }
+            this.classList.add('active');
+
+            let dataFilter = this.getAttribute('data-filter');
+
+            for (let k=0; k<projectCard.length; k++) {
+                projectCard[k].classList.remove('active');
+                projectCard[k].classList.add('hide');
+
+                if (projectCard[k].getAttribute('data-item') == dataFilter || dataFilter == 'all') {
+                    projectCard[k].classList.remove('hide');
+                    projectCard[k].classList.add('active');
+                }
+            }
+      })
+    }
