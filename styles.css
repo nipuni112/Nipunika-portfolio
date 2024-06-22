@@ -110,6 +110,7 @@ body.dark {
     display: flex;
     padding: 15px;
     border-radius: 8px;
+    cursor: pointer;
     transition: var(--trans-03);
 }
 
@@ -126,7 +127,7 @@ body.dark {
     margin-right: 10px;
 }
 
-.navbar .nav-links a span {
+.navbar .nav-links span {
     font-size: 1rem;
     font-weight: 500;
     color: var(--text-color-gray);
@@ -1105,4 +1106,217 @@ body.dark .aboutme-content .about-img {
     font-weight: 600;
     cursor: pointer;
     transition: var(--trans-02);
+}
+/* end projects page */
+
+/* start resume page */
+.resume-container {
+    position: relative;
+    left: 250px;
+    width: calc(100% - 250px);
+    background: var(--body-color);
+    min-height: auto;
+    padding: 10px 50px;
+    transition: var(--trans-03);
+    z-index: 2;
+    overflow: hidden;
+}
+
+.resume-container h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    color: var(--primary-color);
+}
+
+/* start personal info area */
+.prersonal-info h1 {
+    font-size: 1.3rem;
+    color: #fff;
+    background: var(--secondary-color);
+    padding: 20px;
+    width: 500px;
+    text-align: left;
+    padding-left: 90px;
+    border-radius: 50px;
+    margin-left: -100px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.personl-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prersonal-info table {
+    width: 600px;
+    text-align: left;
+    height: 260px;
+    color: var(--text-color-gray);
+    transition: var(--trans-03);
+}
+
+.personl-container .image {
+    background: url(img/about-image.svg);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    margin-top: -90px;
+    transition: all 0.6s;
+}
+
+body.dark .personl-container .image {
+    background: url(img/about-image-dark.svg);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    margin-top: -90px;
+    transition: all 0.6s;
+}
+/* end personal info area */
+
+/* start educational qualifications area */
+.educational h1 {
+    font-size: 1.3rem;
+    color: #fff;
+    background: var(--secondary-color);
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    border-radius: 50px;
+    margin-left: -100px;
+    margin-bottom: 50px;
+}
+
+.exams {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* o/l result table */
+.ol h3 {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.ol table {
+    width: 500px;
+    height: 400px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    border-collapse: collapse;
+    transition: var(--trans-03);
+}
+
+.ol table th {
+    color: var(--primary-color);
+    padding: 15px;
+}
+
+.ol table td {
+    color: var(--text-color-gray);
+    font-weight: 500;
+    padding: 15px;
+}
+
+/* both tables row decoration */
+.educational table tr:nth-child(2n) {
+    background-color: var(--home-color);
+}
+
+/* a/l result table */
+.al h3 {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.al table {
+    width: 500px;
+    height: 200px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    border-collapse: collapse;
+    transition: var(--trans-03);
+}
+
+.al table th {
+    color: var(--primary-color);
+    padding: 15px;
+}
+
+.al table td {
+    color: var(--text-color-gray);
+    font-weight: 500;
+    padding: 15px;
+}
+/* end educational qulification area */
+
+/* PROFESSIONAL QUALIFICATIONS */
+.proffessional h1 {
+    font-size: 1.3rem;
+    color: #fff;
+    background: var(--secondary-color);
+    padding: 20px;
+    width: 500px;
+    text-align: left;
+    padding-left: 90px;
+    border-radius: 50px;
+    margin-left: -100px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.proffessional ul li {
+    font-size: 1.2rem;
+    color: var(--text-color-gray);
+    width: 900px;
+    margin-bottom: 15px;
+}
+/* end PROFESSIONAL QUALIFICATIONS area */
+
+/* start WORK EXPERIENCE area */
+.Work h1 {
+    font-size: 1.3rem;
+    color: #fff;
+    background: var(--secondary-color);
+    padding: 20px;
+    width: 500px;
+    text-align: left;
+    padding-left: 90px;
+    border-radius: 50px;
+    margin-left: -100px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.Work ul li {
+    font-size: 1.2rem;
+    color: var(--text-color-gray);
+    width: 900px;
+    margin-bottom: 15px;
+}
+/* end WORK EXPERIENCE area */
+
+.resume-container .download-btn-cv {
+    width: 300px;
+    height: 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    background: var(--secondary-color);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+.resume-container .download-btn-cv i {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 10px;
 }

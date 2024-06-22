@@ -3,12 +3,30 @@ const body = document.querySelector("body"),
       mode = body.querySelector('.mode'),
       modeText = body.querySelector('.mode-text');
 
+
+    //   navlinks onclick action 
+     //  go to home page
+      function home() {
+        location.href="index.html";
+     };
+
+    //  go to projects page
+     function projects() {
+        location.href="projects.html";
+     };
+
+    //  go to resume page 
+     function resume() {
+        location.href="resume.html";
+     };
+
       // change mode 
     //   get item local storage
     if (localStorage.getItem('nightMode') == 'true') {
         body.classList.add('dark');
     }
 
+    // change mode class 
     modeNav.addEventListener('click', () => {
         body.classList.toggle('dark');
 
@@ -40,6 +58,7 @@ const body = document.querySelector("body"),
     hiddenEl.forEach((el) => observer.observe(el));
 
 
+
     // progress bar ( find on codepen: https://codepen.io/Okba-Design/pen/LYGXevQ)
     !function(a){a.fn.percentageLoader=function(b){this.each(function(){function q(){p.customAttributes.arc=function(a,b,c){var h,d=360/b*a,e=(90-d)*Math.PI/180,f=j+c*Math.cos(e),g=k-c*Math.sin(e);return h=b==a?[["M",j,k-c],["A",c,c,0,1,1,j-.01,k-c]]:[["M",j,k-c],["A",c,c,0,+(d>180),1,f,g]],{path:h}},p.path().attr({arc:[100,100,l],"stroke-width":d.strokeWidth,stroke:d.bgColor}),e&&(m=p.path().attr({arc:[.01,100,l],"stroke-width":d.strokeWidth,stroke:d.ringColor,cursor:"pointer"}),r(e,100,l,m,2)),n=p.text(j,k,e+"%").attr({font:d.fontWeight+" "+d.fontSize+" Arial",fill:d.textColor})}function r(a,b,c,d){f?d.animate({arc:[a,b,c]},900,">"):a&&a!=b?d.animate({arc:[a,b,c]},750,"elastic"):(a=b,d.animate({arc:[a,b,c]},750,"bounce",function(){d.attr({arc:[0,b,c]})}))}var c=a(this),d=a.extend({},a.fn.percentageLoader.defaultConfig,b),e=parseInt(c.children(d.valElement).text()),f=!0,h=parseInt(c.css("width")),i=parseInt(c.css("height")),j=h/2,k=i/2,l=j-d.strokeWidth/2,m=null,n=null,p=Raphael(this,h,i);q()})},a.fn.percentageLoader.defaultConfig={valElement:"p",strokeWidth:20,bgColor:"#d9d9d9",ringColor:"#d53f3f",textColor:"#9a9a9a",fontSize:"12px",fontWeight:"normal"}}(jQuery);
 
@@ -55,7 +74,7 @@ const body = document.querySelector("body"),
       });
 
 
-    //   project filter (find on youtube : https://youtu.be/ATeWQlY3N04?si=dUJgtUDtU-ms0SAN)
+    //   button active class
       let sort = document.querySelectorAll('.sort'); 
       let projectCard = document.querySelectorAll('.project-card');
 
@@ -66,6 +85,7 @@ const body = document.querySelector("body"),
             }
             this.classList.add('active');
 
+            //   project filter (find on youtube : https://youtu.be/ATeWQlY3N04?si=dUJgtUDtU-ms0SAN)
             let dataFilter = this.getAttribute('data-filter');
 
             for (let k=0; k<projectCard.length; k++) {
@@ -75,7 +95,7 @@ const body = document.querySelector("body"),
                 if (projectCard[k].getAttribute('data-item') == dataFilter || dataFilter == 'all') {
                     projectCard[k].classList.remove('hide');
                     projectCard[k].classList.add('active');
-                }
-            }
-      })
-    }
+                };
+            };
+      });
+    };
