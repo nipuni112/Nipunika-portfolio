@@ -49,3 +49,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "You are not allowed to access this page.";
 }
 ?>
+<!-- end php  -->
