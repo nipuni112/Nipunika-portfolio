@@ -243,6 +243,7 @@ body.dark .sun-moon .moon {
     padding: 11px 30px;
     border-radius: 8px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .my-image {
@@ -1302,8 +1303,17 @@ body.dark .personl-container .image {
 }
 /* end WORK EXPERIENCE area */
 
+.my-cv {
+    margin-top: 100px;
+}
+
+.my-cv iframe {
+    width: 600px;
+    height: 890px;
+}
+
 .resume-container .download-btn-cv {
-    width: 300px;
+    width: 200px;
     height: 40px;
     font-size: 1.1rem;
     font-weight: 500;
@@ -1312,7 +1322,8 @@ body.dark .personl-container .image {
     border: none;
     outline: none;
     border-radius: 5px;
-    margin-top: 100px;
+    margin-top: 50px;
+    cursor: pointer;
 }
 
 .resume-container .download-btn-cv i {

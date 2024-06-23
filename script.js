@@ -7,19 +7,96 @@ const body = document.querySelector("body"),
     //   navlinks onclick action 
      //  go to home page
       function home() {
-        location.href="index.html";
+        window.location.href="index.html";
      };
 
     //  go to projects page
      function projects() {
-        location.href="projects.html";
+        window.location.href="projects.html";
      };
 
     //  go to resume page 
      function resume() {
-        location.href="resume.html";
+        window.location.href="resume.html";
      };
 
+    //  github
+    function github() {
+        window.location.href='https://github.com/Nipuni-code', '_blank';
+    };
+
+    // facebook
+    function fb() {
+        window.location.href='https://www.facebook.com/profile.php?id=61554160661089&mibextid=ZbWKwL', '_blank';
+    };
+
+    // youtube
+    function yt() {
+        window.location.href='https://www.youtube.com/channel/UCoBoV5a5xo8DWO8ZmHqFV6g', '_blank';
+    };
+
+    //  contact button 
+    function contact() {
+        window.location.href="tel:+94 77 532 6346";
+    };
+                        
+
+    // home page CTA button action 
+    function viewResume() {
+        window.open('img/Nipunika Weeravansha.pdf', '_blank');
+    };
+    
+
+    // project page project view button
+    function prj1() {
+        window.open('https://homestudiorecords01.netlify.app/', '_blank');
+    };
+
+    function prj2() {
+        window.open('https://beatupp.netlify.app/#', '_blank');
+    };
+
+    function prj3() {
+        window.open('https://bytebrainlk.netlify.app/', '_blank');
+    };
+
+    function prj4() {
+        window.open('img/flower-shop.pdf', '_blank');
+    };
+
+    function prj5() {
+        window.open('img/coffee-shop.pdf', '_blank');
+    };
+
+    function prj6() {
+        window.open('img/juice-bar.pdf', '_blank');
+    };
+
+    function prj7() {
+        window.open('img/drama-hub.pdf', '_blank');
+    };
+
+    function prj8() {
+        window.open('img/cake-hub.pdf', '_blank');
+    };
+
+    function prj9() {
+        window.open('img/education.pdf', '_blank');
+    };
+
+    function prj10() {
+        window.open('img/rainbow.svg', '_blank');
+    };
+
+    function prj11() {
+        window.open('img/furry letter.svg', '_blank');
+    };
+
+    function prj12() {
+        window.open('img/furry background.svg', '_blank');
+    };
+
+    
       // change mode 
     //   get item local storage
     if (localStorage.getItem('nightMode') == 'true') {

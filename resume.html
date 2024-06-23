@@ -34,8 +34,8 @@
             </li>
 
             <!-- projects navbar -->
-            <li class="nav-links">
-                <i class="ri-folder-5-line icon" onclick="projects()"></i>
+            <li class="nav-links" onclick="projects()">
+                <i class="ri-folder-5-line icon"></i>
                 <span class="nav-text text">Projects</span>
             </li>
 
@@ -50,19 +50,19 @@
         <!-- social media navbars -->
         <ul class="nav-second navbar left-hidden">
             <!-- github navbar -->
-            <li class="nav-links">
+            <li class="nav-links" onclick="github()">
                 <i class="ri-github-fill icon"></i>
                 <span class="nav-text text">GitHub</span>
             </li>
 
             <!-- facebook navbar -->
-            <li class="nav-links">
+            <li class="nav-links" onclick="fb()">
                 <i class="ri-facebook-fill icon"></i>
                 <span class="nav-text text">Facebook</span>
             </li>
 
             <!-- yputube navbar -->
-            <li class="nav-links">
+            <li class="nav-links" onclick="yt()">
                 <i class="ri-youtube-fill icon"></i>
                 <span class="nav-text text">Youtube</span>
             </li>
@@ -242,8 +242,15 @@
             </ul>
 
 
-            <!-- download cv -->
-             <button type="button" class="download-btn-cv left-hidden">Download CV <i class="ri-download-cloud-2-line"></i></button>
+            <div class="my-cv">
+                <h1 class="text left-hidden">My Resume</h1>
+                <iframe src="img/Nipunika Weeravansha.pdf" class="left-hidden" title="resume"></iframe>
+                <div class="cv-download">
+                    <!-- download cv find on stack overflow : https://stackoverflow.com/questions/11620698/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript -->
+                    <button type="submit" class="download-btn-cv left-hidden" onclick="document.getElementById('link').click()">Download CV <i class="ri-download-cloud-2-line"></i></button>
+                    <a id="link" href="img/Nipunika Weeravansha.pdf" download hidden></a>
+                </div>
+            </div>
         </div>
     </section>
 

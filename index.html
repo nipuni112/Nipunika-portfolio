@@ -29,20 +29,20 @@
         <ul class="nav-first navbar left-hidden">
             <!-- home navbar -->
             <li class="nav-links active" onclick="home()">
-                    <i class="ri-home-line icon"></i>
-                    <span class="nav-text text">Home</span>
+                <i class="ri-home-line icon"></i>
+                <span class="nav-text text">Home</span>
             </li>
 
             <!-- projects navbar -->
             <li class="nav-links" onclick="projects()">
-                    <i class="ri-folder-5-line icon"></i>
-                    <span class="nav-text text">Projects</span>
+                <i class="ri-folder-5-line icon"></i>
+                <span class="nav-text text">Projects</span>
             </li>
 
             <!-- Resume navbar -->
-            <li class="nav-links">
-                    <i class="ri-profile-line icon" onclick="resume()"></i>
-                    <span class="nav-text text">Resume</span>
+            <li class="nav-links" onclick="resume()">
+                <i class="ri-profile-line icon"></i>
+                <span class="nav-text text">Resume</span>
             </li>
         </ul>
         <!-- end pages navbar -->
@@ -50,19 +50,19 @@
         <!-- social media navbars -->
         <ul class="nav-second navbar left-hidden">
             <!-- github navbar -->
-            <li class="nav-links">
+            <li class="nav-links" onclick="github()">
                     <i class="ri-github-fill icon"></i>
                     <span class="nav-text text">GitHub</span>
             </li>
 
             <!-- facebook navbar -->
-            <li class="nav-links">
+            <li class="nav-links" onclick="fb()">
                     <i class="ri-facebook-fill icon"></i>
                     <span class="nav-text text">Facebook</span>
             </li>
 
             <!-- yputube navbar -->
-            <li class="nav-links">
+            <li class="nav-links" onclick="yt()">
                     <i class="ri-youtube-fill icon"></i>
                     <span class="nav-text text">Youtube</span>
             </li>
@@ -96,7 +96,7 @@
                 <h1 class="text left-hidden">hey, I’m a <span>Web developer</span> & <span>Designer.</span></h1>
                 <p class="text left-hidden">Nipunika Prabodhani Weeravansha is who I am. I'm skilled in both web design
                     and development.</p>
-                <h3 class="text left-hidden">See Resume</h3>
+                <h3 class="text left-hidden" onclick="viewResume()">See Resume</h3>
             </div>
 
             <!-- main image -->
@@ -166,8 +166,8 @@
                 </p>
                 <!-- buttons -->
                 <div class="buttons">
-                    <button type="button" class="btn1 left-hidden">Contact Me</button>
-                    <button type="button" class="btn2 left-hidden">Read More <i
+                    <button type="button" class="btn1 left-hidden" onclick="contact()">Contact Me</button>
+                    <button type="button" class="btn2 left-hidden" onclick="resume()">Read More <i
                             class="ri-arrow-right-line"></i></button>
                 </div>
             </div>
@@ -292,7 +292,7 @@
                     user-friendly experience for customers seeking beautiful floral arrangements.</p>
                 <!-- buttons -->
                 <div class="project-buttons left-hidden">
-                    <button type="button" class="btn-view">View</button>
+                    <button type="button" class="btn-view" onclick="prj4()">View</button>
                 </div>
             </div>
 
@@ -308,7 +308,7 @@
                     fruit juices.</p>
                 <!-- buttons -->
                 <div class="project-buttons left-hidden">
-                    <button type="button" class="btn-view">View</button>
+                    <button type="button" class="btn-view" onclick="prj6()">View</button>
                 </div>
             </div>
 
@@ -323,14 +323,14 @@
                     the warm and inviting world of a premium coffee shop.</p>
                 <!-- buttons -->
                 <div class="project-button left-hidden">
-                    <button type="button" class="btn-view">View</button>
+                    <button type="button" class="btn-view" onclick="prj5()">View</button>
                 </div>
             </div>
         </div>
 
         <!-- view all projects button -->
         <div class="main-project-btn left-hidden">
-            <button type="button" class="btn-view-all">View All <i class="ri-arrow-right-line"></i></button>
+            <button type="button" class="btn-view-all" onclick="projects()">View All <i class="ri-arrow-right-line"></i></button>
         </div>
 
         <!-- background circles -->
@@ -401,9 +401,10 @@
 
                 <!-- download & view buttons -->
                 <div class="buttons">
-                    <button type="button" class="download left-hidden">Download <i
+                    <button type="button" class="download left-hidden" onclick="document.getElementById('link').click()">Download <i
                             class="ri-arrow-down-line"></i></button>
-                    <button type="button" class="view left-hidden">View <i class="ri-arrow-right-line"></i></button>
+                            <a id="link" href="img/Nipunika Weeravansha.pdf" download hidden></a>
+                    <button type="button" class="view left-hidden" onclick="projects()">View <i class="ri-arrow-right-line"></i></button>
                 </div>
             </div>
         </div>
